@@ -5,6 +5,7 @@ import { FunctionSelector } from "./FunctionSelector";
 import { CodePreview } from "./CodePreview";
 import { Language } from "@/types/Language";
 import { Function } from "@/types/Function";
+import { generateCode } from "@/utils/genetateCode";
 
 
 type ProgrammingFormProps = {
