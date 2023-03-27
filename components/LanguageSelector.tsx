@@ -1,3 +1,4 @@
+import { Language } from "@/types/Language"
 import { FormControl, FormLabel, Radio, RadioGroup, VStack } from "@chakra-ui/react"
 
 type LanguageSelectorProps = {
@@ -33,7 +34,7 @@ export const LanguageSelector = ({
                             key={lang.id}
                             value={lang.id}
                         >
-                            {languages.label}
+                            {lang.label}
                         </Radio>
                     ))}
                 </RadioGroup>
