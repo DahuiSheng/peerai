@@ -1,5 +1,7 @@
+import { languages } from '@/data/languages'
 import { Function } from '../types/Function'
 import { Language } from '../types/Language'
+import { functions } from '@/data/functions'
 
 const generateJavaScriptCode = (functions: string[]) => {
   let code = ''
