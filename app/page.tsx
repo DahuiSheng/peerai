@@ -1,7 +1,40 @@
+"use client"
 
+import { ProgrammingForm } from "@/components/ProgrammingForm"
+import { ChakraProvider } from "@chakra-ui/react"
 
-export default function Home() {
+const functions: Function[] = [
+  {
+    id: "form",
+    label: "Form",
+  },
+  {
+    id: "list",
+    label: "List",
+  }
+  {
+    id: "table",
+    label: "Table",
+  },
+]
+
+const languages: Language[] = [
+  {
+    id: "javascript",
+    label: "JavaScript",
+  },
+  {
+    id: "typescript",
+    label: "TypeScript",
+  }
+]
+
+const HomePage = () => {
   return (
-    <div>Hello World</div>
+    <ChakraProvider theme={theme}>
+      <ProgrammingForm functions={functions} languages={languages} />
+    </ChakraProvider>
   )
 }
+
+export default HomePage;

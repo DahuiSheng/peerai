@@ -5,12 +5,12 @@ import { FunctionSelector } from "./FunctionSelector";
 import { CodePreview } from "./CodePreview";
 
 
-type ProgramingFormProps = {
+type ProgrammingFormProps = {
     functions: Function[]
     languages: Language[]
 }
 
-export const ProgramingForm = ({ functions, languages }: ProgramingFormProps) => {
+export const ProgrammingForm = ({ functions, languages }: ProgrammingFormProps) => {
     const [selectedLanguage, setSelectedLanguage] = useState(languages[0].id);
     const [selectedFunctions, setSelectedFunctions] = useState<string[]>([]);
     const [generatedCode, setGeneratedCode] = useState("");
