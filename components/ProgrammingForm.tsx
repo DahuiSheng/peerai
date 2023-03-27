@@ -3,6 +3,8 @@ import { useState } from "react"
 import { LanguageSelector } from "./LanguageSelector";
 import { FunctionSelector } from "./FunctionSelector";
 import { CodePreview } from "./CodePreview";
+import { Language } from "@/types/Language";
+import { Function } from "@/types/Function";
 
 
 type ProgrammingFormProps = {
